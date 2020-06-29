@@ -2,9 +2,15 @@
     list-style: none;
     text-align: center;
     text-decoration: none;
+    margin: 0px;
 }
 /* Navigation Menu */
-
+img.logo {
+    width: 188px;
+}
+.menu-icon{
+    width: 29px;
+}
 nav{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
@@ -12,9 +18,10 @@ nav{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 70px 5px 70px;
+    padding: 20px;
 }
 .hamburger{
+   
     background-color: transparent;
     border: 0;
     display: none;
@@ -46,41 +53,69 @@ nav{
     border-radius: 0.1cm;
 }
 
-
-
-header{
-    background-image: url('./images/hero-background.png')
+/* hero section */
+.hero {
+    background-image: url('./images/hero-background.png');
+    background-size: cover;
+    padding: 40px;
+    margin-bottom: 100px;
+}
+h1{
+    font-family: 'Alegreya', serif; 
+    font-size: 40px;
+    margin-bottom: 0.4em;
+}
+h2 {
+    font-family: 'Alegreya', serif; 
+    font-size: 35px;
+    margin-bottom: 0.4em;
 }
 
 h3{
-    font-family: 'Alegreya', serif; 
-    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 0.4em;
+}
+p .hero-para {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+   
 }
 p{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    margin-bottom: 0.9em;
+}
+.btn-started{
+    border: none;
+    background-color: #488EFF;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: -4px 5px rgba(72, 142, 255, 0.57);
 }
 
-anchor {
+
+/* anchor {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
     font-size: 17.5px
-}
+} */
 /* Nunito Sans
 Regular 400
 Semi-bold 600
 Bold 700
 Alegreya
 Medium 500 
-
 button color: #488EFF
 */
 
-@media screen and (max-width: 1374px){
-    img.logo {
-        width: 188px;
-    }
+/* Desktop Design */
+@media only screen and (max-width: 768px){
     .nav-bar{
         display: none;
         width: 100%;
