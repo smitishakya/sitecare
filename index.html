@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>SiteCare|Blossom Themes</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    
 </head>
 <body>
+    <!-- Navigation Menu -->
     <nav>
-        <ul class="nav-bar">
-            <img src="./images/sitecare-logo.svg" alt="">
-            <li class="nav-li">About</li>
-            <li class="nav-li">Services</li>
-            <li class="nav-li">Features</li>
-            <li class="nav-li">Testimonials</li>
-            <li class="nav-li">Featured Clients</li>
-            <li class="nav-li">Pricing</li>
-            <li class="nav-li">Faqs</li>
-            <button>Login</button>
+        <img src="./images/sitecare-logo.svg" alt="logo" class="logo">
+        <button class="hamburger" id="hamburger">
+            <img src="./images/open.svg" alt="">
+        </button>      
+        <ul class="nav-bar" id="nav-ul">
+            <li class="nav-li"><a href="#">About</a></li>
+            <li class="nav-li"><a href="#">Services</a></li>
+            <li class="nav-li"><a href="#">Features</a></li>
+            <li class="nav-li"><a href="#">Testimonials</a></li>
+            <li class="nav-li"><a href="#">Featured Clients</a></li>
+            <li class="nav-li"><a href="#">Pricing</a></li>
+            <li class="nav-li"><a href="#">Faqs</a></li>
+            <button class="login-button">Login</button>
         </ul>
+        
     </nav>
     <main>
+            
             <header class="hero">
                 <div class="container">
                     <h1>Having a WordPress Headache?</h1>
@@ -33,6 +42,15 @@
             </header>
                 <div>
                     <h4>Featured On</h4>
+                    <img src="./images/fea-andreas-photo.png" alt="fea-andreas-photo">
+                    <img src="./images/fea-majestic-feminine.png" alt="fea-majestic-feminine">
+                    <img src="./images/fea-essentialistics.png" alt="fea-essentialistics">
+                    <img src="./images/fea-icy-hot-lingerie.png" alt="fea-icy-hot-lingerie">
+                    <br/>
+                    <img src="./images/fea-dance-therapy.png" alt="fea-dance-therapy">
+                    <img src="./images/fea-studio-bustle.png" alt="fea-studio-bustle">
+                    <img src="./images/fea-monette-chilson.png" alt="fea-monette-chilson">
+                    <img src="./images/fea-illumina.png" alt="fea-illumina">
                 </div>
                 <div class="container">
                     <div class="row">
@@ -156,12 +174,12 @@
                         <h2>What Clients Say</h2>
                         <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
                         <div>
-                            <h3>"Really gREAT Customer support"</h3>
+                            <h3>"Really great Customer support"</h3>
                             <p>Since starting my blog in March, I have had several questions on how to format things, 
                                 where to find certain settings, and other blogging questions. I have always received a 
                                 response within 12 hours and each time the responses have been accurate and helpful! 
                                     Thanks for making blogging a little easier for this beginner!</p>
-                            <img src="" alt="Quotation mark Image">
+                            <img src="./images/quotation-mark.png" alt="Quotation mark Image">
                             <div class="column">
                                 <div class=row>
                                     <img src="" alt="Jonathan Elliot Image">
@@ -203,7 +221,8 @@
                                 <button>Get Started</button>
                             </div>
                         </div>
-                    </section>          
+                    </section>  
+                      
     </main>
     <footer>
        <div>
@@ -256,5 +275,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

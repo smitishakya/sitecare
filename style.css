@@ -1,0 +1,95 @@
+* {
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+}
+/* Navigation Menu */
+
+nav{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px 5px 70px;
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    display: none;
+    cursor: pointer;
+}
+.hamburger:focus{
+    outline: none;
+}
+.nav-bar{
+    display:flex;
+    align-items: center;
+    padding: 0;
+}
+.nav-li a{
+    color: black;
+}
+.nav-li {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 5px 15px;
+}
+.login-button{
+    border-color: #488EFF;
+    color: #488EFF;
+    font-weight: 700;
+    background-color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 0.1cm;
+}
+
+
+
+header{
+    background-image: url('./images/hero-background.png')
+}
+
+h3{
+    font-family: 'Alegreya', serif; 
+    font-size: 30px;
+}
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+anchor {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 17.5px
+}
+/* Nunito Sans
+Regular 400
+Semi-bold 600
+Bold 700
+Alegreya
+Medium 500 
+
+button color: #488EFF
+*/
+
+@media screen and (max-width: 1374px){
+    img.logo {
+        width: 188px;
+    }
+    .nav-bar{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-bar.show{
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+    }
+}
