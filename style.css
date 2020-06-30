@@ -1,8 +1,8 @@
 * {
     list-style: none;
-    text-align: center;
     text-decoration: none;
     margin: 0px;
+    padding: 0px;
 }
 /* Navigation Menu */
 img.logo {
@@ -20,29 +20,31 @@ nav{
     justify-content: space-between;
     padding: 20px;
 }
-.hamburger{
-   
+.hamburger{ 
     background-color: transparent;
     border: 0;
-    display: none;
+    display: block;
     cursor: pointer;
 }
 .hamburger:focus{
     outline: none;
 }
 .nav-bar{
-    display:flex;
+    display: none;
     align-items: center;
-    padding: 0;
+    padding: 0;    
 }
+.nav-bar.show{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    line-height: 2.5em;
+}
+
 .nav-li a{
-    color: black;
+    color: black; 
 }
-.nav-li {
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 5px 15px;
-}
+
 .login-button{
     border-color: #488EFF;
     color: #488EFF;
@@ -54,11 +56,17 @@ nav{
 }
 
 /* hero section */
+header{
+    text-align: left;
+}
 .hero {
     background-image: url('./images/hero-background.png');
     background-size: cover;
     padding: 40px;
     margin-bottom: 100px;
+}
+.hero-section{
+    padding: 70px 100px;
 }
 h1{
     font-family: 'Alegreya', serif; 
@@ -88,17 +96,93 @@ p{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    margin-bottom: 0.9em;
+    margin-bottom: 1.7em;
 }
 .btn-started{
     border: none;
     background-color: #488EFF;
     color:white;
-    padding: 10px 20px;
-    border-radius: 20px 0px 20px 0px;
+    padding: 10px 30px;
+    border-radius: 15px 0px 15px 0px;
     box-shadow: -4px 5px rgba(72, 142, 255, 0.57);
 }
+/* Featured On Section */
+h6{
+    font-family: 'Alegreya', serif; 
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5em;
+}
+.fea-brands {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.fea-brand {
+    width: 20%;
+    padding: 20px 50px;
+    margin: 10px 20px 10px 20px;
+}
 
+/* About Section */
+h4 {
+    font-family: 'Alegreya', serif; 
+    font-size: 24px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 100px;
+}
+
+.row {
+    text-align: left;
+}
+h5 {
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    margin-bottom: 0.7em;
+
+}
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400; 
+    font-size: 18px;
+}
+.link-tag {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700; 
+    font-size: 17.5px;
+    text-decoration: underline #488EFF;
+    text-underline-position: under;
+    color: rgb(0, 0, 0);
+}
+.about-us-heading{
+    margin-left: 90px;
+    line-height: 3em;
+}
+.about-us{
+    padding: 50px;
+    background-color: rgba(72, 142, 255, 0.132);
+    text-align: left;
+}
+.about-us-content{
+    padding: 20px;
+}
+
+.about-us-image{
+    position: relative;
+    top: -100px;
+    left: -10px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: -7px 7px 7px 4px rgba(72, 142, 255, 0.043);
+    border-radius: 0px 55px 0px 55px;
+}
+.about-role{
+    font-size: 11px;
+}
 
 /* anchor {
     font-family: 'Nunito Sans', sans-serif;
@@ -115,16 +199,49 @@ button color: #488EFF
 */
 
 /* Desktop Design */
-@media only screen and (max-width: 768px){
-    .nav-bar{
-        display: none;
-        width: 100%;
-        flex-direction: column;
+@media screen and (min-width: 768px){
+/* Navigation Menu */
+    nav{
+        padding: 20px 90px 20px 90px;
     }
-    .nav-bar.show{
+    .nav-bar {
         display: flex;
     }
+    .nav-li {
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 5px 15px;
+    }   
     .hamburger{
-        display: block;
+        display: none;
+    }
+/* hero Section */
+    h1{
+        font-size: 60px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    p .hero-para {
+        font-size: 21px;
+    }
+    .btn-started {
+        font-size: 18px;
+    }
+/* Featured On Section */
+    .fea-brands{
+        padding: 20px 80px 60px 80px;
+    }
+    .fea-brand {
+        width: 12%;
+        padding: 20px 50px;
+        margin: 10px 20px 10px 20px;
+    }
+/* About Section */
+    h4 { 
+        font-size: 42px;
+    }
+    h5 {
+        font-size: 30px;
     }
 }
