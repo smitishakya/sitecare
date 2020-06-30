@@ -9,11 +9,12 @@
 html,body{
     overflow-x: hidden;
 }
-p{
+p, blockquote{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
+
 /* Navigation Menu */
 img.logo {
     width: 188px;
@@ -137,7 +138,7 @@ h4 {
     display: flex;
     flex-direction: column;
 }
-.header-para{
+.para{
     margin-bottom: 1.3em;
     font-size: 16px;
     
@@ -209,7 +210,7 @@ h5 {
 
 /* Testimonal Section */
 .testimonials {
-    padding: 50px;
+    padding: 20px;
     background-color: rgba(72, 142, 255, 0.132);
     text-align: center;
 }
@@ -218,19 +219,20 @@ h5 {
 }
 .test-para{
     font-style: italic;
-    padding: 20px;
-    line-height: 2em;
-}
-.column-3 {
     text-align: left;
+    margin-bottom: 20px;
 }
+.test-row{
+    padding: 5px;
+}
+
 .column {
     background-color: white;
     box-shadow: -7px 7px 7px 4px rgba(72, 142, 255, 0.043);
     border-radius: 0px 35px 0px 35px;
     display: inline-block;
     padding: 5px 15px;
-    margin: 20px;
+    margin: 10px;
 }
 .sub-container {
     display: flex;
@@ -254,38 +256,43 @@ h5 {
 }
 
 /* Getstarted section */
+.get-started{
+    padding: 40px;
+}
 .getstarted-section {
     background-color: #2C3964;
     color: white;
     border-radius: 0px 55px 0px 55px;
 }
 .getstarted-content{
-    margin: 20px;
+    margin: 30px;
 }
 .get-started-button{
     padding: 5px;
-    margin: 10px 20px 30px 30px;
+    margin: 10px 30px 30px 30px;
 }
 
 /* 
 Footer Section  */
+footer {
+    padding: 40px;
+}
 .info-footer {
     display: flex;
 }
 .footer-row{
     display: flex;
     flex-wrap: wrap;
-    margin: 40px 70px;
     flex-direction: column;
 }
 .footer-column{
     flex: 50%;
-    padding: 20px;
+    padding: 40px;
 }
 
 .footer-bottom{
     display: flex;
-    margin: 40px 70px;
+
 }
 .footer-li{
     display: inline-block;
@@ -397,32 +404,46 @@ button color: #488EFF
     .features-content {
         padding: 100px 90px 0px;
     }
+    .column {
+        margin: 20px;
+    }
 /* Testimonal Section */
-.testimonials {
-    padding: 50px;
-}
-.testimonials-container{
-    margin: 0 100px; 
-}
+    .testimonials {
+        padding: 50px;
+    }
+    .testimonials-container{
+        margin: 0 100px; 
+    }
+    .test-para{
+        text-align: center;
+    }
+
+
 /* Getstarted section */
 
-.getstarted-content{
-    margin: 50px;
-}
-.get-started-button{
-    padding: 5px;
-    margin: 110px 30px 50px 100px;
-}
-.btn{
-    padding: 20px 40px;
-}
+    .getstarted-content{
+        margin: 50px;
+    }
+    .get-started-button{
+        padding: 5px;
+        margin: 110px 30px 50px 100px;
+    }
+    .btn{
+        padding: 20px 40px;
+    }
 /* Footer Section  */ 
-.footer-row{
-    flex-direction: row;
-}
-.footer-column{
-    flex: 25%;
-    
-}
+    .footer-row{
+        flex-direction: row;
+    }
+    .footer-column{
+        flex: 25%;
+        
+    }
+    footer li, .footer-p{
+        line-height: 2em;
+    }
+    .footer-bottom{
+        margin: 30px 40px;
+    }
 
 }
