@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Navigation Menu -->
-    <nav>
+    <nav class="navigation">
         <img src="./images/sitecare-logo.svg" alt="logo" class="logo">
         <button class="hamburger" id="hamburger">
             <img class="menu-icon" src="./images/open.svg" alt="">
@@ -26,7 +26,6 @@
             <li class="nav-li"><a href="#">Faqs</a></li>
             <button class="login-button">Login</button>
         </ul>
-        
     </nav>
     <main>
         <header class="hero">
@@ -68,21 +67,23 @@
                         </p>
                         <a href="#" class="link-tag">View our WordPress Support & Maintenance Plan</a>
                     </div>
-                    <div class="row about-us-image">
-                        <img src="./images/nabin-jaiswal-image.png" alt="Nabin Jaiswal Image">
-                        <h5>Nabin Jaiswal</h5>
+                    <div class="row about-us-team">
+                        <img class="about-us-image" src="./images/nabin-jaiswal-image.png" alt="Nabin Jaiswal Image">
+                        <h5 class="about-name">Nabin Jaiswal</h5>
                         <p class="about-role">WordPress Expert and Support Lead</p>
                     </div>
                 </div>
                 <section class="features">
-                    <h4>Our Features</h4>
-                    <p>Feel free to surf through our services and features below.</p>
-                    <div class="container">
+                    <div class="section-center">
+                        <h4>Our Features</h4>
+                        <p class="section-para">Feel free to surf through our services and features below.</p>
+                    </div>
+                    <div class="container ">
                         <div class="row">
                             <img src="./images/ofea-security-mointoring.png" alt="24/7 Security Monitoring">
                         </div>
-                        <div class="row">
-                            <h3>24/7 Security Monitoring</h3>
+                        <div class="row features-content">
+                            <h5>24/7 Security Monitoring</h5>
                             <p>Our 24/7 security surveillance keeps an eye on your website
                                 at all times. Our secuirty monitor keeps your site safe from
                                 dangers like hacks, malware, and cyber-attacks.
@@ -93,8 +94,8 @@
                 </section>
                 <section class="features">
                     <div class="container">
-                        <div class="row">
-                            <h3>Automated Backup</h3>
+                        <div class="row features-content">
+                            <h5>Automated Backup</h5>
                             <p>Your data is always safe with us with the help of our 
                                 automated backup plan. We offer fully-automated daily or 
                                 weekly backups to protect your valuable information. A 
@@ -112,8 +113,8 @@
                         <div class="row">
                             <img src="./images/ofea-performance-optimization.png" alt="Performance Optimization Image">
                         </div>
-                        <div class="row">
-                            <h3>Performance Optimization</h3>
+                        <div class="row features-content">
+                            <h5>Performance Optimization</h5>
                             <p>We make sure your website always has great performance 
                                 in terms of speed, code validation, and more. To optimize the 
                                 speed of your website, we use the best practices. As a 
@@ -124,8 +125,8 @@
                 </section>
                 <section class="features">
                         <div class="container">
-                            <div class="row">
-                                <h3>WordPress Updates</h3>
+                            <div class="row features-content">
+                                <h5>WordPress Updates</h5>
                                 <p>Our support and maintenance service safely updates your 
                                     website’s core, plugins, and themes and supports upgrade 
                                     compatibility. 
@@ -144,8 +145,8 @@
                             <div class="row">
                                 <img src="./images/ofea-personal-wordpress-support.png" alt="Personal WordPress Support Image">
                             </div>
-                            <div class="row">
-                                <h3>Personal WordPress Support</h3>
+                            <div class="row features-content">
+                                <h5>Personal WordPress Support</h5>
                                 <p>Enjoy a personal WordPress support services by 
                                     professional WP experts! We offer you easy chat support 
                                     and priority email support.
@@ -158,8 +159,8 @@
                     </section>
                     <section class="features">
                         <div class="container">
-                            <div class="row">
-                                <h3>Small Tasks</h3>
+                            <div class="row features-content">
+                                <h5>Small Tasks</h5>
                                 <p>Want to experiment with attractive layouts and specific 
                                     features on your website?
                                     <br/>
@@ -172,110 +173,126 @@
                             </div>
                         </div>
                     </section>
-                    <section>
-                        <h4>What Clients Say</h4>
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
-                        <div>
-                            <h3>"Really great Customer support"</h3>
-                            <p>Since starting my blog in March, I have had several questions on how to format things, 
-                                where to find certain settings, and other blogging questions. I have always received a 
-                                response within 12 hours and each time the responses have been accurate and helpful! 
+                    <section class="testimonials-container">
+                        <div class="section-center">
+                            <h4>What Clients Say</h4>
+                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+                        </div>
+                        <div class="testimonials">
+                            <h5>"Really great Customer support"</h5>
+                            <p class="test-para">Since starting my blog in March, I have had several questions on how to format things,<br/>
+                            where to find certain settings, and other blogging questions. I have always received a<br/>
+                            response within 12 hours and each time the responses have been accurate and helpful!<br/>
                                     Thanks for making blogging a little easier for this beginner!</p>
                             <img src="./images/quotation-mark.png" alt="Quotation mark Image">
-                            <div class="column">
-                                <div class=row>
-                                    <img src="" alt="Jonathan Elliot Image">
-                                </div>
-                                <div class="row">
-                                    <h5>Jonathan Elliot</h5>
-                                    <p>CEO & Co-Founder</p>
-                                </div>
+                            <br/>
+                            <div class="column-3">
+                                    <div class="column">
+                                        <div class="sub-container">
+                                            <div class="row">
+                                                <span class="circle"></span>
+                                            </div>
+                                            <div class="row">
+                                                <h5>Jonathan Elliot</h5>
+                                                <p>CEO & Co-Founder</p>
+                                            </div>
+                                        </div>
+                                            
+                                        </div>
+                                        <div class="column">
+                                            <div class="sub-container">
+                                                <div class=row>
+                                                    <span class="circle middle"></span>
+                                                </div>
+                                                <div class="row">
+                                                    <h5>Mary Ann Rivera</h5>
+                                                    <p>CEO & Co-Founder</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="sub-container">
+                                                <div class=row>
+                                                    <span class="circle"></span>
+                                                </div>
+                                                <div class="row">
+                                                    <h5>Justin Gomez</h5>
+                                                    <p>CEO & Co-Founder</p>
+                                                </div>
+                                            </div>
+                                        </div>
                             </div>
-                            <div class="column">
-                                    <div class=row>
-                                        <img src="" alt="Mary Ann Rivera Image">
-                                    </div>
-                                    <div class="row">
-                                        <h5>Mary Ann Rivera</h5>
-                                        <p>CEO & Co-Founder</p>
-                                    </div>
-                            </div>
-                            <div class="column">
-                                    <div class=row>
-                                        <img src="" alt="Justin Gomez Image">
-                                    </div>
-                                    <div class="row">
-                                        <h5>Justin Gomez</h5>
-                                        <p>CEO & Co-Founder</p>
-                                    </div>
-                            </div>
+                            
                         </div>
-                        <p>www.siteurlhere.com</p>
+                        <p class="website-name">www.siteurlhere.com</p>
                     </section>
-                    <section>
-                        <div class="container">
-                            <div class="row">
-                                <h4>I must explain to you how all this idea works here.</h4>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                    <section >
+                        <div class="container getstarted-section">
+                            <div class="row getstarted-content">
+                                <h5>I must explain to you how all this idea works here.</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy<br/>
                                     eirmod tempor invidunt ut labore.</p>
                             </div>
-                            <div class="row">
-                                <button class="btn-started">Get Started</button>
+                            <div class="row get-started-button">
+                                <button class="btn-started btn">Get Started</button>
                             </div>
                         </div>
-                    </section>  
-                      
+                    </section>                  
     </main>
     <footer>
-       <div>
-           <h5>Sitecare</h5>
-           <p>Lorem ipsum dolor sit amet, 
-               consetetur sadipscing elitr, sed 
-               diam nonumy eirmod tempor 
-               invidunt ut labore et dolore 
-               magna aliquyam erat, sed diam 
-               voluptua.</p>
-       </div>
-       <div>
-           <h5>Company</h5>
+       <div class="footer-row">
+           <div class="footer-column">
+                <h5>Sitecare</h5>
+                <p>Lorem ipsum dolor sit amet, 
+                    consetetur sadipscing elitr, sed 
+                    diam nonumy eirmod tempor 
+                    invidunt ut labore et dolore 
+                    magna aliquyam erat, sed diam 
+                    voluptua.</p>
+           </div>         
+           <div class="footer-column">
+            <h5>Company</h5>
            <ul>
                <li>About</li>
                <li>Our Team</li>
                <li>Mission</li>
                <li>Testimonials</li>
            </ul>
-       </div>
-       <div>
-            <h5>Services</h5>
-            <ul>
-                <li>About</li>
-                <li>Our Team</li>
-                <li>Mission</li>
-                <li>Testimonials</li>
-            </ul>
-        </div>
-        <div>
-            <h5>Features</h5>
+           </div>      
+            <div class="footer-column">
+                <h5>Services</h5>
                 <ul>
                     <li>About</li>
                     <li>Our Team</li>
                     <li>Mission</li>
                     <li>Testimonials</li>
                 </ul>
+            </div>
+            <div class="footer-column">
+                <h5>Features</h5>
+                    <ul>
+                        <li>About</li>
+                        <li>Our Team</li>
+                        <li>Mission</li>
+                        <li>Testimonials</li>
+                    </ul>
+            </div>
         </div>
-        <p>© Sitecare 2019 | All Rights Reserved.</p>
-        <nav>
-            <a href="#">Privacy</a>|
-            <a href="#">Terms & Conditions</a>
-        </nav>
-        <nav class="social-footer">
-            <ul>
-                <li><a href="#" target="_blank" ><img src="./images/instagram-icon.png" alt="instagram icon"></a></li>
-                <li><a href="#" target="_blank" ><img src="./images/pinterest-icon.png" alt="pinterest icon"></a></li>
-                <li><a href="#" target="_blank" ><img src="./images/twitter-icon.png" alt="twitter icon"></a></li>
-                <li><a href="#" target="_blank" ><img src="./images/facebook-icon.png" alt="facebook icon"></a></li>
-            </ul>
-        </nav>
+        <div class="footer-bottom"> 
+                <div class="info-footer">
+                    <p class="footer-li">© Sitecare 2019 | All Rights Reserved.</p>
+                    <a class="footer-li" href="#">Privacy | </a>
+                    <a class="footer-li" href="#">Terms & Conditions</a>
+                </div>
+                <nav class="social-footer">
+                    <ul class="footer-ul">
+                        <li class="footer-li"><a href="#" target="_blank" ><img src="./images/instagram-icon.png" alt="instagram icon"></a></li>
+                        <li class="footer-li"><a href="#" target="_blank" ><img src="./images/pinterest-icon.png" alt="pinterest icon"></a></li>
+                        <li class="footer-li"><a href="#" target="_blank" ><img src="./images/twitter-icon.png" alt="twitter icon"></a></li>
+                        <li class="footer-li"><a href="#" target="_blank" ><img src="./images/facebook-icon.png" alt="facebook icon"></a></li>
+                    </ul>
+                </nav>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="./script.js"></script>

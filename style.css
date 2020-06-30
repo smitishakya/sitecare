@@ -3,6 +3,7 @@
     text-decoration: none;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 /* Navigation Menu */
 img.logo {
@@ -11,7 +12,7 @@ img.logo {
 .menu-icon{
     width: 29px;
 }
-nav{
+.navigation{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
     display: flex;
@@ -128,22 +129,22 @@ h6{
 /* About Section */
 h4 {
     font-family: 'Alegreya', serif; 
-    font-size: 24px;
+    font-size: 20px;
+    margin: 0.7em;
 }
 .container {
     display: flex;
-    flex-direction: row;
-    margin: 0 100px;
+    flex-direction: column;
+    margin: 0px 50px;
 }
 
 .row {
-    text-align: left;
+    padding: 20px;
 }
 h5 {
     font-family: 'Alegreya', serif;
     font-size: 20px;
     margin-bottom: 0.7em;
-
 }
 p{
     font-family: 'Nunito Sans', sans-serif;
@@ -171,24 +172,137 @@ p{
     padding: 20px;
 }
 
-.about-us-image{
+.about-us-team{
     position: relative;
-    top: -100px;
-    left: -10px;
-    padding: 30px;
+    top: 5px;
+    padding: 20px;
     background-color: white;
     box-shadow: -7px 7px 7px 4px rgba(72, 142, 255, 0.043);
     border-radius: 0px 55px 0px 55px;
+    text-align: center;
 }
 .about-role{
     font-size: 11px;
 }
+.about-us-image{
+    width: 150px;
+}
+/* Our Features Section */
+.features {
+    padding: 40px 90px;
+}
+.section-center {
+    text-align: center;
+}
+.section-para {
+    font-weight: 600; 
+    font-size: 18px;
+}
+.features-content {
+    padding: 100px 90px 0px;
 
-/* anchor {
+}
+
+/* Testimonal Section */
+.testimonials {
+    padding: 50px;
+    background-color: rgba(72, 142, 255, 0.132);
+    text-align: center;
+}
+.testimonials-container{
+    margin: 0 50px; 
+}
+.test-para{
+    font-style: italic;
+    padding: 20px;
+    line-height: 2em;
+}
+.column-3 {
+    display: flex;
+    align-items: center;
+}
+.column {
+    background-color: white;
+    box-shadow: -7px 7px 7px 4px rgba(72, 142, 255, 0.043);
+    border-radius: 0px 35px 0px 35px;
+    display: inline-block;
+    padding: 5px 15px;
+}
+.sub-container {
+    display: flex;
+    flex-direction: row;
+}
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(97, 102, 111, 0.118);
+    border-radius: 50%;
+    display: inline-block;
+}
+.middle{
+    background-color: #488EFF;
+}
+.website-name {
+    color: #488EFF;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Getstarted section */
+.getstarted-section {
+    background-color: #2C3964;
+    color: white;
+    border-radius: 0px 55px 0px 55px;
+}
+.getstarted-content{
+    margin: 50px;
+
+
+}
+
+.get-started-button{
+    padding: 5px;
+    margin: 110px 30px 50px 100px;
+}
+.btn{
+    padding: 70px;
+}
+/* 
+Footer Section  */
+.info-footer {
+    display: flex;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 70px;
+    flex-direction: column;
+}
+.footer-column{
+    flex: 50%;
+    padding: 20px;
+}
+
+.footer-bottom{
+    display: flex;
+    margin: 40px 70px;
+}
+.footer-li{
+    display: inline-block;
+    padding: 6px;
+}
+.social-footer {
+    display: flex;
+    margin: 0px 0px 0px auto;
+}
+.info-footer a{
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 700;
-    font-size: 17.5px
-} */
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* TRBL */
+
 /* Nunito Sans
 Regular 400
 Semi-bold 600
@@ -197,11 +311,12 @@ Alegreya
 Medium 500 
 button color: #488EFF
 */
+ 
 
 /* Desktop Design */
 @media screen and (min-width: 768px){
 /* Navigation Menu */
-    nav{
+    .navigation{
         padding: 20px 90px 20px 90px;
     }
     .nav-bar {
@@ -211,7 +326,7 @@ button color: #488EFF
         text-transform: uppercase;
         display: inline-block;
         padding: 5px 15px;
-    }   
+    } 
     .hamburger{
         display: none;
     }
@@ -244,4 +359,42 @@ button color: #488EFF
     h5 {
         font-size: 30px;
     }
+    .container{
+        flex-direction: row;
+        margin: 0 100px;
+    }
+    .about-us-team{
+        position: relative;
+        top: -100px;
+        left: -10px;
+        padding: 30px;
+    }
+    .about-us-image{
+        width: 183px;
+    }
+/* Our Features Section */
+    .section-para {
+        font-size: 21px;
+    }
+/* Testimonal Section */
+.testimonials {
+    padding: 50px;
+}
+.testimonials-container{
+    margin: 0 100px; 
+}
+
+.column {
+    margin: 20px;
+    flex-direction: row;
+}
+/* Footer Section  */ 
+.footer-row{
+    flex-direction: row;
+}
+.footer-column{
+    flex: 25%;
+    
+}
+
 }
