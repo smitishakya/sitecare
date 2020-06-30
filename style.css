@@ -91,13 +91,12 @@ p .hero-para {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
     font-size: 14px;
-   
+    margin-bottom: 1.7em;
 }
 p{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    margin-bottom: 1.7em;
 }
 .btn-started{
     border: none;
@@ -189,7 +188,7 @@ p{
 }
 /* Our Features Section */
 .features {
-    padding: 40px 90px;
+    padding: 40px 30px;
 }
 .section-center {
     text-align: center;
@@ -218,8 +217,7 @@ p{
     line-height: 2em;
 }
 .column-3 {
-    display: flex;
-    align-items: center;
+    text-align: left;
 }
 .column {
     background-color: white;
@@ -227,10 +225,11 @@ p{
     border-radius: 0px 35px 0px 35px;
     display: inline-block;
     padding: 5px 15px;
+    margin: 20px;
 }
 .sub-container {
     display: flex;
-    flex-direction: row;
+
 }
 .circle {
     height: 50px;
@@ -246,6 +245,7 @@ p{
     color: #488EFF;
     text-align: center;
     font-size: 16px;
+    margin-bottom: 1.7em;
 }
 
 /* Getstarted section */
@@ -255,18 +255,13 @@ p{
     border-radius: 0px 55px 0px 55px;
 }
 .getstarted-content{
-    margin: 50px;
-
-
+    margin: 20px;
 }
-
 .get-started-button{
     padding: 5px;
-    margin: 110px 30px 50px 100px;
+    margin: 10px 20px 30px 30px;
 }
-.btn{
-    padding: 70px;
-}
+
 /* 
 Footer Section  */
 .info-footer {
@@ -344,6 +339,9 @@ button color: #488EFF
         font-size: 18px;
     }
 /* Featured On Section */
+    .features {
+        padding: 40px 90px;
+    }
     .fea-brands{
         padding: 20px 80px 60px 80px;
     }
@@ -383,10 +381,17 @@ button color: #488EFF
 .testimonials-container{
     margin: 0 100px; 
 }
+/* Getstarted section */
 
-.column {
-    margin: 20px;
-    flex-direction: row;
+.getstarted-content{
+    margin: 50px;
+}
+.get-started-button{
+    padding: 5px;
+    margin: 110px 30px 50px 100px;
+}
+.btn{
+    padding: 20px 40px;
 }
 /* Footer Section  */ 
 .footer-row{
