@@ -277,9 +277,7 @@ Footer Section  */
 footer {
     padding: 40px;
 }
-.info-footer {
-    display: flex;
-}
+
 .footer-row{
     display: flex;
     flex-wrap: wrap;
@@ -289,11 +287,21 @@ footer {
     flex: 50%;
     padding: 40px;
 }
-
 .footer-bottom{
-    display: flex;
-
+    margin: 0px 20px;
 }
+.info-footer{
+    margin-bottom: 10px;
+}
+.info-footer p, .info-footer a{
+    font-size: 14px;
+}
+.info-footer a{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    padding: 0;
+}
+
 .footer-li{
     display: inline-block;
     padding: 6px;
@@ -302,11 +310,7 @@ footer {
     display: flex;
     margin: 0px 0px 0px auto;
 }
-.info-footer a{
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-}
+
 
 /* TRBL */
 
@@ -444,6 +448,13 @@ button color: #488EFF
     }
     .footer-bottom{
         margin: 30px 40px;
+    }
+    .footer-bottom{
+        display: flex;
+    
+    }
+    .info-footer a, .info-footer p{
+        font-size: 18px;
     }
 
 }
