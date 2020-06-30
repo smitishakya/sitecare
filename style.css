@@ -4,6 +4,15 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
+}
+html,body{
+    overflow-x: hidden;
+}
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
 /* Navigation Menu */
 img.logo {
@@ -67,7 +76,7 @@ header{
     margin-bottom: 100px;
 }
 .hero-section{
-    padding: 70px 100px;
+    padding: 20px 30px;
 }
 h1{
     font-family: 'Alegreya', serif; 
@@ -87,17 +96,12 @@ h3{
     font-size: 20px;
     margin-bottom: 0.4em;
 }
-p .hero-para {
-    font-family: 'Nunito Sans', sans-serif;
+.para {
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 1.7em;
 }
-p{
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-}
+
 .btn-started{
     border: none;
     background-color: #488EFF;
@@ -119,57 +123,53 @@ h6{
     flex-direction: row;
     justify-content: center;
 }
+
 .fea-brand {
-    width: 20%;
-    padding: 20px 50px;
-    margin: 10px 20px 10px 20px;
+    padding: 20px 30px;
 }
 
 /* About Section */
 h4 {
     font-family: 'Alegreya', serif; 
     font-size: 20px;
-    margin: 0.7em;
 }
 .container {
     display: flex;
     flex-direction: column;
-    margin: 0px 50px;
+}
+.header-para{
+    margin-bottom: 1.3em;
+    font-size: 16px;
+    
 }
 
-.row {
-    padding: 20px;
-}
 h5 {
     font-family: 'Alegreya', serif;
     font-size: 20px;
     margin-bottom: 0.7em;
 }
-p{
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400; 
-    font-size: 18px;
-}
+
 .link-tag {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700; 
-    font-size: 17.5px;
+    font-size: 14px;
     text-decoration: underline #488EFF;
     text-underline-position: under;
     color: rgb(0, 0, 0);
 }
 .about-us-heading{
-    margin-left: 90px;
-    line-height: 3em;
+    text-align: center;
+    padding: 40px;
 }
 .about-us{
-    padding: 50px;
+    padding: 20px;
     background-color: rgba(72, 142, 255, 0.132);
     text-align: left;
 }
 .about-us-content{
     padding: 20px;
 }
+
 
 .about-us-team{
     position: relative;
@@ -187,8 +187,14 @@ p{
     width: 150px;
 }
 /* Our Features Section */
+.featured-header{
+    padding: 40px;
+}
 .features {
-    padding: 40px 30px;
+    padding: 40px;
+}
+.fea-image {
+    width: 250px;
 }
 .section-center {
     text-align: center;
@@ -198,8 +204,7 @@ p{
     font-size: 18px;
 }
 .features-content {
-    padding: 100px 90px 0px;
-
+    padding: 10px 40px 0px;
 }
 
 /* Testimonal Section */
@@ -306,6 +311,7 @@ Alegreya
 Medium 500 
 button color: #488EFF
 */
+
  
 
 /* Desktop Design */
@@ -335,6 +341,9 @@ button color: #488EFF
     p .hero-para {
         font-size: 21px;
     }
+    .hero-section{
+        padding: 70px 100px;
+    }
     .btn-started {
         font-size: 18px;
     }
@@ -342,14 +351,14 @@ button color: #488EFF
     .features {
         padding: 40px 90px;
     }
+    .fea-image {
+        width: 470px;
+    }
     .fea-brands{
-        padding: 20px 80px 60px 80px;
+        padding: 20px 30px 30px 30px;
+        margin: 50px 20px;
     }
-    .fea-brand {
-        width: 12%;
-        padding: 20px 50px;
-        margin: 10px 20px 10px 20px;
-    }
+    
 /* About Section */
     h4 { 
         font-size: 42px;
@@ -357,12 +366,17 @@ button color: #488EFF
     h5 {
         font-size: 30px;
     }
+    .link-tag {
+        font-size: 17.5px;
+    }
     .container{
         flex-direction: row;
         margin: 0 100px;
     }
+    .about-us{
+        padding: 40px;
+    }
     .about-us-team{
-        position: relative;
         top: -100px;
         left: -10px;
         padding: 30px;
@@ -370,9 +384,18 @@ button color: #488EFF
     .about-us-image{
         width: 183px;
     }
+    .about-us-heading{
+        text-align: left;
+        padding: 100px;
+
+    }
+    
 /* Our Features Section */
     .section-para {
         font-size: 21px;
+    }
+    .features-content {
+        padding: 100px 90px 0px;
     }
 /* Testimonal Section */
 .testimonials {
