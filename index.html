@@ -11,9 +11,9 @@
 </head>
 <body>
     <!-- Navigation Menu -->
-    <nav class="navigation">
+    <nav class="navigation" role="navigation">
         <img src="./images/sitecare-logo.svg" alt="logo" class="logo">
-        <button class="hamburger" id="hamburger">
+        <button class="hamburger" id="hamburger" aria-label="Hamburger icon">
             <img class="menu-icon" src="./images/open.svg" alt="">
         </button>      
         <ul class="nav-bar" id="nav-ul">
@@ -24,22 +24,22 @@
             <li class="nav-li"><a href="#">Featured Clients</a></li>
             <li class="nav-li"><a href="#">Pricing</a></li>
             <li class="nav-li"><a href="#">Faqs</a></li>
-            <button class="login-button">Login</button>
+            <li><a class="login-button" href="#">Login</a></li>
         </ul>
     </nav>
-    <main>
-        <header class="hero">
+    <main role="main">
+        <header class="hero" role="hero">
             <div class="hero-section">
                 <h1>Having a WordPress Headache?<br>
                  We Have The Cure!</h1>
                 <h3>Turn your dream online business into a thriving reality!</h3>
-                <p class="para">Leave the rest to the experts. From performance optimization, update,
+                <p class="hero-para">Leave the rest to the experts. From performance optimization, update,
                     <br>security to regular scan for malware, and more! We got it all.</p>
-                <button class="btn-started">Get Started</button>
+                <button class="btn-started" aria-label="Get Started">Get Started</button>
             </div>
         </header>
                 <div class="featured-header">
-                    <h5>Featured On</h5>
+                    <h5 class="fea-heading">Featured On</h5>
                     <div class="fea-brands">
                             <img class="fea-brand" src="./images/fea-andreas-photo.svg" alt="fea-andreas-photo">
                             <img class="fea-brand" src="./images/fea-majestic-feminine.svg" alt="fea-majestic-feminine">
@@ -52,13 +52,14 @@
                             <img class="fea-brand" src="./images/fea-illumina.svg" alt="fea-illumina">
                     </div>  
                 </div>
+                <div class="line"></div>
                 <h2 class="about-us-heading">Worpress Maintenance Experts</h2>
                 <div class="container about-us">
                     <div class="row about-us-content"> 
                         <h4>Wordpress Support And Maintenance From
                             Professionals
                         </h4>
-                        <p class="header-para">We can help you with any Wordpress maintenance. Contact us via email<br>
+                        <p class="para">We can help you with any Wordpress maintenance. Contact us via email<br>
                             and one of our WordPress experts will unravel the issue quickly. With our<br>
                             prompt support and quick fixes, you will save time and stress less.
                         <br>
@@ -75,8 +76,8 @@
                 </div>
                 <section class="features">
                     <div class="section-center">
-                        <h2>Our Features</h2>
-                        <p class="section-para">Feel free to surf through our services and features below.</p>
+                        <h2 >Our Features</h2>
+                        <p class="para">Feel free to surf through our services and features below.</p>
                     </div>
                     <div class="container ">
                         <div class="row">
@@ -194,7 +195,7 @@
                                                 <span class="circle"></span>
                                             </div>
                                             <div class="row test-row">
-                                                <h4>Jonathan Elliot</h4>
+                                                <h5>Jonathan Elliot</h5>
                                                 <p>CEO & Co-Founder</p>
                                             </div>
                                         </div>
@@ -206,7 +207,7 @@
                                                     <span class="circle middle"></span>
                                                 </div>
                                                 <div class="row test-row">
-                                                    <h4>Mary Ann Rivera</h4>
+                                                    <h5>Mary Ann Rivera</h5>
                                                     <p>CEO & Co-Founder</p>
                                                 </div>
                                             </div>
@@ -217,7 +218,7 @@
                                                     <span class="circle"></span>
                                                 </div>
                                                 <div class="row test-row">
-                                                    <h4>Justin Gomez</h4>
+                                                    <h5>Justin Gomez</h5>
                                                     <p>CEO & Co-Founder</p>
                                                 </div>
                                             </div>
@@ -231,16 +232,16 @@
                         <div class="container getstarted-section">
                             <div class="row getstarted-content">
                                 <h4>I must explain to you how all this idea works here.</h4>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy<br>
+                                <p class="getstarted-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy<br>
                                     eirmod tempor invidunt ut labore.</p>
                             </div>
                             <div class="row get-started-button">
-                                <button class="btn-started btn">Get Started</button>
+                                <button class="btn-started btn" aria-label="Get Started">Get Started</button>
                             </div>
                         </div>
                     </section>                  
     </main>
-    <footer>
+    <footer role="footer-area">
        <div class="footer-row">
            <div class="footer-column">
                 <h5>Sitecare</h5>
@@ -278,8 +279,9 @@
                         <li>Testimonials</li>
                     </ul>
             </div>
+        <div class="line"></div>
         </div>
-        <div class="footer-line"></div>
+        
         <div class="footer-bottom"> 
                 <div class="info-footer">
                     <p class="footer-li">© Sitecare 2019 | All Rights Reserved.</p>

@@ -64,12 +64,13 @@ img.logo {
 .login-button{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 18px;
-    border-color: #488EFF;
+    border: 1px solid #488EFF;
     color: #488EFF;
     font-weight: 600;
     background-color: white;
     display: inline-block;
     padding: 6px 25px;
+    padding: 3px 36px;
     box-shadow: 4px 5px rgba(72, 142, 255, 0.063);
     border-radius: 0.1cm;
 }
@@ -81,11 +82,10 @@ header{
 .hero {
     background-image: url('./images/hero-background.svg');
     background-size: cover;
-    padding: 40px;
-    margin-bottom: 100px;
 }
 .hero-section{
-    padding: 20px 30px;
+    margin: 0 50px;
+    padding: 50px 20px;
 }
 h1, h2, h3 {
     margin-bottom: 0.4em;
@@ -102,15 +102,24 @@ h2 {
 
 h3{
     font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;;
     font-size: 25px;
     font-style: italic;
 
 }
 .para {
-    font-weight: 600;
+    font-weight: 400;  
     font-size: 14px;
-    line-height: 2em;
 }
+.para, .hero-para{
+    margin-bottom: 1.3em;  
+    line-height: 1.5em; 
+}
+.hero-para{
+    font-weight: 600;
+    font-size: 18px;
+}
+
 
 .btn-started{
     border: none;
@@ -127,10 +136,14 @@ h3{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    margin: 0 50px;
+}
+.fea-heading{
+    margin: 30px 0px;
 }
 
 .fea-brand {
-    padding: 20px 30px;
+    padding: 20px 16px;
 }
 
 /* About Section */
@@ -144,9 +157,9 @@ h4 {
     display: flex;
     flex-direction: column;
 }
-.para{
-    margin-bottom: 1.3em;
-}
+
+
+
 
 .link-tag {
     font-family: 'Nunito Sans', sans-serif;
@@ -155,15 +168,19 @@ h4 {
     text-decoration: underline #488EFF;
     text-underline-position: under;
     color: rgb(0, 0, 0);
+    margin-bottom: 4em;
 }
 .about-us-heading{
     text-align: center;
-    padding: 40px;
+    padding: 100px 30px 11px 30px;
 }
+
+
 .about-us{
     padding: 20px;
     background-color: rgba(72, 142, 255, 0.132);
     text-align: left;
+    margin: 0 50px;
 }
 .about-us-content{
     padding: 20px;
@@ -186,24 +203,16 @@ h4 {
     width: 150px;
 }
 /* Our Features Section */
-.featured-header{
-    padding: 40px;
-}
 .features {
-    padding: 40px;
+    padding: 20px;
+    margin: 0 50px;
 }
 .fea-image {
-    width: 250px;
+    width: 180px;
 }
 .section-center {
     text-align: center;
-}
-.section-para {
-    font-weight: 600; 
-    font-size: 18px;
-}
-.features-content {
-    padding: 10px 40px 0px;
+    padding: 20px;
 }
 
 /* Testimonal Section */
@@ -216,9 +225,9 @@ h4 {
     margin: 0 50px; 
 }
 .test-para{
-    font-style: italic;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    line-height: 2em;
 }
 .test-row{
     padding: 5px;
@@ -229,11 +238,13 @@ h4 {
     box-shadow: -7px 7px 7px 4px rgba(72, 142, 255, 0.043);
     border-radius: 0px 35px 0px 35px;
     display: inline-block;
-    padding: 5px 15px;
+    
+    padding: 5px 10px;
     margin: 10px;
 }
 .sub-container {
     display: flex;
+    padding: 10px;
 
 }
 .circle {
@@ -255,7 +266,11 @@ h4 {
 
 /* Getstarted section */
 .get-started{
-    padding: 40px;
+    padding: 20px;
+    margin: 0 50px;
+}
+.getstarted-p{
+    line-height: 2em;
 }
 .getstarted-section {
     background-color: #2C3964;
@@ -278,27 +293,33 @@ h5{
     line-height: 1.5em;
     text-align: center;
 }
-footer {
-    padding: 40px;
+
+.footer-column h5{
+    text-align: left;
 }
 
 .footer-row{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 0 50px;
 }
 .footer-column{
     flex: 50%;
-    padding: 40px;
+    padding: 20px;
+}
+.footer-column li{
+    line-height: 2em;
 }
 .footer-bottom{
-    margin: 0px 20px;
+    margin: 0 50px;
 }
-.footer-line{
+.line{
     border-bottom: 0.2px solid rgba(72, 142, 255, 0.288);
 }
 .info-footer{
     margin-bottom: 10px;
+    padding: 10px;
 }
 .info-footer p, .info-footer a{
     font-size: 14px;
@@ -321,6 +342,7 @@ footer {
 .social-footer {
     display: flex;
     margin: 0px 0px 0px auto;
+    padding: 10px;
 }
 
 
@@ -337,9 +359,9 @@ button color: #488EFF
 
  
 
-/* Ipad and Desktop Design */
 @media screen and (min-width: 768px){
 
+    
 /* hero Section */
     h1{
         font-size: 60px;
@@ -347,27 +369,25 @@ button color: #488EFF
     h2{
         font-size: 42px;
     }
-    .para {
+    .hero-para{
         font-size: 21px;
     }
-    .hero-section{
-        padding: 70px 100px;
+    .para{
+        font-size: 18px; 
     }
+
     .btn-started {
         font-size: 18px;
     }
 /* Featured On Section */
-    .features {
-        padding: 40px 90px;
-    }
+
     .fea-image {
-        width: 470px;
+        width: 350px;
     }
     .fea-brands{
-        padding: 20px 30px 30px 30px;
-        margin: 50px 20px;
+        padding: 20px 20px 20px 20px;
+      
     }
-    
 /* About Section */
     h3 { 
         font-size: 30px;
@@ -380,11 +400,12 @@ button color: #488EFF
     }
     .container{
         flex-direction: row;
-        margin: 0 100px;
     }
     .about-us{
-        padding: 40px;
+        justify-content: space-between;
+        padding: 20px;
     }
+
     .about-us-team{
         top: -100px;
         left: -10px;
@@ -395,27 +416,26 @@ button color: #488EFF
     }
     .about-us-heading{
         text-align: left;
-        padding: 100px;
+        margin: 0 50px;
 
     }
-    
+     
 /* Our Features Section */
-    .section-para {
-        font-size: 21px;
-    }
     .features-content {
-        padding: 100px 90px 0px;
+        padding: 45px 10px 13px;
     }
     .column {
+        padding: 5px 15px;;
         margin: 20px;
+    }
+    blockquote br {
+        display: none;
     }
 /* Testimonal Section */
     .testimonials {
         padding: 50px;
     }
-    .testimonials-container{
-        margin: 0 100px; 
-    }
+
     .test-para{
         text-align: center;
     }
@@ -428,11 +448,12 @@ button color: #488EFF
     }
     .get-started-button{
         padding: 5px;
-        margin: 110px 30px 50px 100px;
+        margin: 60px 30px 30px 50px;; 
     }
     .btn{
-        padding: 20px 40px;
+        padding: 20px 25px;
     }
+
 /* Footer Section  */ 
     h5{
         font-size: 21px;
@@ -441,26 +462,22 @@ button color: #488EFF
         flex-direction: row;
     }
     .footer-column{
-        flex: 25%;
-        
+        flex: 25%;       
     }
     footer li, .footer-p{
         line-height: 2em;
     }
     .footer-bottom{
-        margin: 30px 40px;
-    }
-    .footer-bottom{
+
         display: flex;
-    
-    }
+    }   
     .info-footer a, .info-footer p{
         font-size: 18px;
     }
 
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1025px){
     /* Navigation Menu */
     .navigation{
         padding: 20px 90px 20px 90px;
@@ -470,10 +487,67 @@ button color: #488EFF
         text-transform: uppercase;
         display: inline-block;
     }
+    .login-button{
+        padding: 6px 25px;
+    }
     .nav-bar {
         display: flex;
     }
     .hamburger{
         display: none;
     }
+    /* Hero Section */
+    .hero-section{
+        margin: 0px 200px;
+        padding: 50px 20px;
+    }
+    /* Featured On Section */
+    .features {
+        margin: 0 200px;
+    }
+    .fea-image {
+        width: 470px;
+    }
+    .fea-brands{
+        padding: 20px 20px 20px 20px;
+        margin: 50px 200px;
+    }
+    .features-content {
+        padding: 100px 90px 0px;
+    }
+    /* About Us */  
+    .about-us{
+        margin: 0 200px;
+        padding: 40px;
+    }
+    .about-us-heading{
+        margin: 0px 200px;
+    }
+    .about-us-content{
+        padding: 50px 20px 20px 20px;
+    }
+    /* Testimonal Section */
+    .testimonials-container{
+        margin: 0 200px; 
+    }
+    /* Getstarted section */
+    .get-started{
+        margin: 0 200px;
+    }
+  
+    .get-started-button{
+        margin: 60px 80px 30px 100px; 
+    }
+    .btn{
+        padding: 15px 35px;
+    }
+
+    .footer-row{
+        margin: 0px 200px;
+    }
+    .footer-bottom{
+        margin: 0px 200px;
+        padding: 20px;
+    }
 }
+
