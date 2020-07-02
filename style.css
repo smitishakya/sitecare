@@ -26,7 +26,7 @@ img.logo {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: space-between;
     padding: 20px;
@@ -345,20 +345,7 @@ h5{
     padding: 10px;
 }
 
-
-/* TRBL */
-
-/* Nunito Sans
-Regular 400
-Semi-bold 600
-Bold 700
-Alegreya
-Medium 500 
-button color: #488EFF
-*/
-
- 
-
+/* Ipad and Desktop Size */
 @media screen and (min-width: 768px){
 
     
@@ -476,7 +463,7 @@ button color: #488EFF
     }
 
 }
-
+/* Desktop Size */
 @media only screen and (min-width: 1025px){
     /* Navigation Menu */
     .navigation{
